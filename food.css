@@ -64,12 +64,12 @@ section {
 }
 
 /* Section 제목 중앙 정렬 */
-#KoreanFood h1 {
+#Food h1 {
     margin-top: 100px;
     text-align: center;
     margin-bottom: 20px
 }
-#KoreanFood p {
+#Food p {
     text-align: center;
     margin-bottom: 20px;
 }
