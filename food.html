@@ -4,17 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Korean Food</title>
-    <link rel="stylesheet" href="TeamProject.CSS">
+    <link rel="stylesheet" href="food.css">
     <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
-    <script src="food.JS"></script>
+    <script src="TeamProject.JS"></script>
 </head>
 <body>
 <header id="main-header">
-    <a id="logo-link" href="TeamProject.html">
-        <img class="logo" src="images/백놀.png" width="200px" height="100px" alt="BaekNol Logo">
+    <a id="logo-link">
+        <img class="logo-link" src="images/백놀.png" width="200" height="100" alt="BaekNol Logo">
     </a>
     <nav id="main-nav">
         <ul class="inner-menu">
+            <li class="inner-menu-item"><a href="#">먹거리</a></li>
             <li class="inner-menu-item"><a href="hobby.html">놀거리</a></li>
             <li class="inner-menu-item"><a href="culture.html">볼거리</a></li>
         </ul>
@@ -25,22 +26,34 @@
     <article>
         <h1>한식 맛집</h1>
         <p>학교 주변 및 천안 맛집</p>
-        <div class="card-container">
-            <a href="https://map.naver.com/p/search/%EC%B2%9C%EC%95%88%20%EC%9C%A1%ED%92%8D%EC%8B%A0%EB%B6%80%EC%A0%90/place/1016019158?c=15.00,0,0,0,dh&isCorrectAnswer=true" target="_blank" class="card">
-                <img src="images/육풍 신부점.png" alt="meat">
-                <h3>육풍</h3>
-                <p>고기 맛집</p>
-            </a>
-            <a href="https://map.naver.com/p/search/%EC%B2%9C%EC%95%88%20%EC%95%88%EA%B3%A8%EC%8B%9D%EB%8B%B9/place/17240586?c=15.00,0,0,0,dh" target="_blank" class="card">
-                <img src="images/안골식당.png" alt="mandoo">
-                <h3>안골식당</h3>
-                <p>전골 맛집</p>
-            </a>
-            <a href="https://map.naver.com/p/search/%EC%B2%9C%EC%95%88%20%EA%B3%A4%EC%B0%9C/place/32839896?c=12.00,0,0,0,dh&isCorrectAnswer=true" target="_blank" class="card">
-                <img src="images/곤찜.png" alt="gondre">
-                <h3>곤찜</h3>
-                <p>곤드레 맛집</p>
-            </a>
+        <div class="restaurant-list">
+            <div class="restaurant-card">
+                <img src="images/육풍 신부점.png" alt="육풍 이미지">
+                <div class="info">
+                    <h3>육풍</h3>
+                    <p>전화번호: 041-123-4567</p>
+                    <p>위치: 천안시 서북구 신부동 123-45</p>
+                    <p>영업시간: 11:00 ~ 22:00</p>
+                </div>
+            </div>
+            <div class="restaurant-card">
+                <img src="images/안골식당.png" alt="안골식당 이미지">
+                <div class="info">
+                    <h3>안골식당</h3>
+                    <p>전화번호: 041-234-5678</p>
+                    <p>위치: 천안시 서북구 안서동 67-89</p>
+                    <p>영업시간: 10:30 ~ 21:30</p>
+                </div>
+            </div>
+            <div class="restaurant-card">
+                <img src="images/곤찜.png" alt="곤찜 이미지">
+                <div class="info">
+                    <h3>곤찜</h3>
+                    <p>전화번호: 041-345-6789</p>
+                    <p>위치: 천안시 동남구 봉명동 101-12</p>
+                    <p>영업시간: 12:00 ~ 23:00</p>
+                </div>
+            </div>
         </div>
     </article>
 </section>
@@ -48,5 +61,13 @@
 <footer>
     &copy; 2024 BaekNol TeamProject6
 </footer>
+
+<script>
+    // 로고 클릭 시 TeamProject.html로 이동
+    document.getElementById('logo-link').addEventListener('click', function(event) {
+        event.preventDefault(); // 기본 링크 동작을 막음
+        window.location.href = 'TeamProject.html'; // 페이지 이동
+    });
+</script>
 </body>
 </html>
