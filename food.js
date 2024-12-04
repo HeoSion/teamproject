@@ -4,3 +4,4 @@ document.addEventListener('DOMContentLoaded', function () {
         window.location.href = 'TeamProject.html'; // 페이지 이동
     });
 });
+

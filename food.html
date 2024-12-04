@@ -6,68 +6,61 @@
     <title>Korean Food</title>
     <link rel="stylesheet" href="food.css">
     <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
-    <script src="TeamProject.JS"></script>
+    <script src="food.js"></script>
 </head>
 <body>
 <header id="main-header">
-    <a id="logo-link">
+    <a id="logo-link" href="#">
         <img class="logo-link" src="images/백놀.png" width="200" height="100" alt="BaekNol Logo">
     </a>
     <nav id="main-nav">
         <ul class="inner-menu">
-            <li class="inner-menu-item"><a href="#">먹거리</a></li>
-            <li class="inner-menu-item"><a href="hobby.html">놀거리</a></li>
-            <li class="inner-menu-item"><a href="culture.html">볼거리</a></li>
+            <li class="inner-menu-item"><a href="TeamProject.html#Food">먹거리</a></li>
+            <li class="inner-menu-item"><a href="TeamProject.html#Hobby">놀거리</a></li>
+            <li class="inner-menu-item"><a href="TeamProject.html#Culture">볼거리</a></li>
         </ul>
     </nav>
 </header>
 
-<section id="KoreanFood">
+<section id="Food">
     <article>
         <h1>한식 맛집</h1>
         <p>학교 주변 및 천안 맛집</p>
         <div class="restaurant-list">
-            <div class="restaurant-card">
-                <img src="images/육풍 신부점.png" alt="육풍 이미지">
+            <div class="restaurant-card" >
+                <img src="images/육풍 신부점.png" alt="육풍 이미지" >
                 <div class="info">
                     <h3>육풍</h3>
-                    <p>전화번호: 041-123-4567</p>
-                    <p>위치: 천안시 서북구 신부동 123-45</p>
-                    <p>영업시간: 11:00 ~ 22:00</p>
+                    <p>전화번호: 0507-1304-9488</p>
+                    <p>위치: 충남 천안시 동남구 터미널9길 4</p>
+                    <p>영업시간: 화요일~일요일 16:00 ~ 23:30</p>
                 </div>
             </div>
             <div class="restaurant-card">
                 <img src="images/안골식당.png" alt="안골식당 이미지">
                 <div class="info">
                     <h3>안골식당</h3>
-                    <p>전화번호: 041-234-5678</p>
-                    <p>위치: 천안시 서북구 안서동 67-89</p>
-                    <p>영업시간: 10:30 ~ 21:30</p>
+                    <p>전화번호: 0507-1348-2664</p>
+                    <p>위치: 충남 천안시 동남구 먹거리2길 6-1 2층</p>
+                    <p>영업시간: 화요일~일요일 11:30 ~ 21:00</p>
                 </div>
             </div>
             <div class="restaurant-card">
                 <img src="images/곤찜.png" alt="곤찜 이미지">
                 <div class="info">
                     <h3>곤찜</h3>
-                    <p>전화번호: 041-345-6789</p>
-                    <p>위치: 천안시 동남구 봉명동 101-12</p>
-                    <p>영업시간: 12:00 ~ 23:00</p>
+                    <p>전화번호: 0507-1412-8847</p>
+                    <p>위치: 충남 천안시 서북구 원두정4길 11 101호</p>
+                    <p>영업시간: 화요일~일요일 11:00 ~ 23:00</p>
                 </div>
             </div>
         </div>
     </article>
 </section>
+</body>
 
 <footer>
-    &copy; 2024 BaekNol TeamProject6
+    <p>&copy; 2024 BaekNol TeamProject6</p>
 </footer>
 
-<script>
-    // 로고 클릭 시 TeamProject.html로 이동
-    document.getElementById('logo-link').addEventListener('click', function(event) {
-        event.preventDefault(); // 기본 링크 동작을 막음
-        window.location.href = 'TeamProject.html'; // 페이지 이동
-    });
-</script>
-</body>
 </html>

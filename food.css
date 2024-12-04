@@ -12,11 +12,10 @@ header {
     background-color: #ffffff; /* 배경 색상 */
     padding: 10px 0 10px 0; /* 상하 여백 */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 약간의 그림자 */
-    position: fixed; /* 고정된 메뉴바 */
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 1000;
 }
 
 /* 메뉴바 내부 스타일 */
